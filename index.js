@@ -38,7 +38,7 @@ app.get('/video', (req, res) => {
      videoStream.pipe(res);
 });
 
-const port = 3002;
+const port = process.env.PORT || 3002;
 app.listen(port, () => {
      console.log(`Server listening on port ${port}`);
 });

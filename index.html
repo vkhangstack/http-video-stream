@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTTP Video Stream</title>
+    <style>
+        .center {
+            margin: 0 auto;
+            width: 650px;
+        }
+    </style>
 </head>
 
 <body>
-    <video id="videoPlayer" width="650" controls muted autoplay>
+    <div class="center">
+    <video  id="videoPlayer" width="650" controls muted autoplay>
         <source src="/video" type="video/mp4"/>
     </video>
+</div>
 </body>
 
 </html>
